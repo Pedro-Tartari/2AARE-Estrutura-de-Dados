@@ -21,7 +21,7 @@ O `bubble sort` realiza múltiplas passagens por uma lista. Em cada passagem, el
 fazendo a troca se for necessário, colocando o maior valor na sua posição correta. 
 Em essência, cada item se desloca como uma “bolha” para a posição à qual pertence.
 
-![alt text](https://www.programmersought.com/images/132/c41b58503c110e2f6b425d5f2d91b04c.gif "Title")
+<img src="https://www.programmersought.com/images/132/c41b58503c110e2f6b425d5f2d91b04c.gif" width=50% height=50%>
 
 ***
 
@@ -29,7 +29,7 @@ Em essência, cada item se desloca como uma “bolha” para a posição à qual
 O `selection sort` escolhe (daí o nome) o menor número de um vetor ou lista e joga ele para a primeira posição. 
 Em seguida, ele repete o processo e escolhe o próximo número menor, repetindo isso até que a lista esteja ordenada.
 
-![alt text](https://www.programmersought.com/images/193/6587fa98c51ea1c4812112833ea19c79.gif "Title")
+<img src="https://www.programmersought.com/images/193/6587fa98c51ea1c4812112833ea19c79.gif" width=50% height=50%>
 
 ***
 
@@ -40,7 +40,7 @@ se for, então o número escolhido está na posição correta, e em tese, em um 
 Logo, ele verifica se o número à sua frente e o próximo número estão corretos, fazendo a mudança se necessário. 
 Se houver mudança, então esses dois números estão ordenados no “subarray”. Faz isso até que a lista esteja ordenada.
 
-![alt text](https://www.programmersought.com/images/987/21dd5e7dea202418de0b2a0e5ff4c9b3.gif "Title")
+<img src="https://www.programmersought.com/images/987/21dd5e7dea202418de0b2a0e5ff4c9b3.gif" width=50% height=50%>
 
 ***
 
@@ -51,7 +51,7 @@ O método `quick sort` escolhe um número pivô e usa uma tática de divisão e 
 Para a esquerda, todos elementos menores que P, e direita, todos maiores. 
 Essas sub listas são ordenadas baseadas na posição do pivô, e então é feita quantas passagens necessárias até que a lista inteira esteja ordenada.
 
-![alt text](https://www.programmersought.com/images/264/01a23e68cbfdb1b088e355bcfde19300.gif "Title")
+<img src="https://www.programmersought.com/images/264/01a23e68cbfdb1b088e355bcfde19300.gif" width=50% height=50%>
 
 
 
