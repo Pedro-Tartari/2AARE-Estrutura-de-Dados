@@ -11,12 +11,11 @@ Dessa forma, o `Bubble Sort` não é o algoritmo mais viável de ser utilizado. 
 
 Logo, é possível argumentar que a maior vantagem do `Bubble Sort` é sua baixa complexidade e fácil implementação.
 
-| Primeiro cabeçalho  |  Segundo cabeçalho  |  Segundo cabeçalho |
-| ------------------- | ------------------- | ------------------ |
-|  Célula de conteúdo |  Célula de conteúdo | Célula de conteúdo |
-|  Célula de conteúdo |  Célula de conteúdo | Célula de conteúdo |
+| Pior caso  |  Caso padrão  |  
+| ------------------- | ------------------- | 
+|  O(n^2) |  O(n^2) | 
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif" width=35% height=100%>
+
 
 ***
 
@@ -35,4 +34,13 @@ if (arr[j] > arr[j+1])
                 }
     }
 ```
+
+### **Exemplificando**
+
+- Considere o array [5,1,2,4,8]
+- Veja que 5 é maior do que 1 (if arr[j]>arr[j+1]), logo, esses dois valores tem sua posição trocada, e o array passa a ser [1,5,2,4,8]. O valor 5 irá verificar o restante do array em sua passagem.
+- Após terminar essa passagem, terá: [1,2,4,5,8]. 
+- Ele repetirá o processo com o número 1,2,4,8, verificando cada posição, e então, faz uma última passagem para verificar tudo.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif" width=35% height=100%>
 
