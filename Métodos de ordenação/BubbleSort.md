@@ -2,7 +2,7 @@
 
 ## **Performance** :chart_with_downwards_trend:
 
-Tanto nos piores casos, como nos casos padrões, a complexidade do Bubble Sort permanece em`О(n^2)`, onde `n` é o número de elementos para serem ordenados.
+Tanto nos piores casos, como nos casos padrões, a complexidade do Bubble Sort permanece em `О(n^2)`, onde `n` é o número de elementos para serem ordenados.
 A maioria dos demais algoritmos possuem uma complexidade melhor para os casos, como o `Insertion Sort`, que também possui complexidade `O(n^2)`, porém ainda é mais rápido,
 e não necessariamente mais complexo.
 
