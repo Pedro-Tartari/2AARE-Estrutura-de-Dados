@@ -11,9 +11,9 @@ Dessa forma, o `Bubble Sort` não é o algoritmo mais viável de ser utilizado. 
 
 Logo, é possível argumentar que a maior vantagem do `Bubble Sort` é sua baixa complexidade e fácil implementação.
 
-| Pior caso  |  Caso padrão  |  
-| ------------------- | ------------------- | 
-|  O(n^2) |  O(n^2) | 
+| Pior caso  |  Caso padrão  | Melhor caso |
+| ------------------- | ------------------- | ------------------- |
+|  O(n^2) |  O(n^2) | O(n) | 
 
 
 
