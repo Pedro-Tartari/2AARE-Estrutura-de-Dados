@@ -9,41 +9,45 @@ memória auxiliar é um fator limitante.
 Em termos de eficiência de tempo, o `Selection Sort` é quadrático, então existem outros métodos melhores que esse para aumentar a eficiência no tempo. Apesar disso,
 uma das maiores vantagens do `Selection Sort` é que em seu pior caso, o número de trocas ainda é `n - 1`.
 
-Dessa forma, o `Bubble Sort` não é o algoritmo mais viável de ser utilizado. Isso não significa que ele não possui vantagens, pois em uma lista ordenada, sua complexidade se torna
-`O(n)`, enquanto outros algoritmos ainda possuem uma complexidade maior para esses casos de lista ordenada. Ainda assim, o `Insertion Sort` compartilha dessa vantagem.
-
-Logo, é possível argumentar que a maior vantagem do `Bubble Sort` é sua baixa complexidade e fácil implementação.
-
 | Performance em | Pior caso  |  Caso padrão  | Melhor caso |
 | ------------------- | ------------------- | ------------------- | ------------------- |
-|  Comparações |  O(n^2) | O(n) |  O(n) | 
-|  Trocas |  O(n^2) |  O(n^2) |  O(1) |  
+|  Comparações |  O(n^2) | O(n^2) |  O(n^2) | 
+|  Trocas |  O(n) |  O(n) |  O(1) |  
 
 
 ***
 
 ## **Implementação** :computer:
 ```
-int n = arr.length;
-
+void selectionSort()
+    {
+        int n = arr.length;
+ 
         for (int i = 0; i < n-1; i++)
-            for (int j = 0; j < n-i-1; j++)
+        {
             
-if (arr[j] > arr[j+1])
-                {
-           	       int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
-                }
+            int min_idx = i;
+            for (int j = i+1; j < n; j++)
+                if (arr[j] < arr[min_idx])
+                    min_idx = j;
+  
+            int temp = arr[min_idx];
+            arr[min_idx] = arr[i];
+            arr[i] = temp;
+        }
     }
+
 ```
 
 ### **Exemplificando**
 
 - Considere o array [5,1,2,4,8]
-- Veja que 5 é maior do que 1 (if arr[j]>arr[j+1]), logo, esses dois valores tem sua posição trocada, e o array passa a ser [1,5,2,4,8]. O valor 5 irá verificar o restante do array em sua passagem.
-- Após terminar essa passagem, terá: [1,2,4,5,8]. 
-- Ele repetirá o processo com o número 1,2,4,8, verificando cada posição, e então, faz uma última passagem para verificar tudo.
+- Encontrando o menor valor, 1 , ele é colocado na primeira posição do array (int min_idx = 1)
+- E então, procura-se o próximo menor valor do array [5,2,4,8], o número 2 
+- Então, ele é colocado na segunda posição do array, tendo-se [1,2,5,4,8], 
+  e assim é feito até que todos valores estejam na ordem correta.
+  [1,2,4,5,8] → [1,2,4,5,8].
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif" width=35% height=100%>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Selection_sort_animation.gif" width=35% height=100%>
 
