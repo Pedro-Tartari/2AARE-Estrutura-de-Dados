@@ -2,9 +2,12 @@
 
 ## **Performance** :chart_with_downwards_trend:
 
-Tanto nos piores casos, como nos casos padrões, a complexidade do Bubble Sort permanece em`О(n^2)`, onde `n` é o número de elementos para serem ordenados.
-A maioria dos demais algoritmos possuem uma complexidade melhor para os casos, como o `Insertion Sort`, que também possui complexidade `O(n^2)`, porém ainda é mais rápido,
-e não necessariamente mais complexo.
+O `Selection Sort` possui uma complexidade de `O(n^2)`, semelhante ao do  `Bubble Sort`, ou seja, sua performance em listas grandes deixa a desejar, além de ser
+, em geral, inferior ao  `Insertion Sort`. Suas vantagens são a simplicidade e a performance sobre outros métodos em casos específicos, especialmente quando a 
+memória auxiliar é um fator limitante.
+
+Em termos de eficiência de tempo, o `Selection Sort` é quadrático, então existem outros métodos melhores que esse para aumentar a eficiência no tempo. Apesar disso,
+uma das maiores vantagens do `Selection Sort` é que em seu pior caso, o número de trocas ainda é `n - 1`.
 
 Dessa forma, o `Bubble Sort` não é o algoritmo mais viável de ser utilizado. Isso não significa que ele não possui vantagens, pois em uma lista ordenada, sua complexidade se torna
 `O(n)`, enquanto outros algoritmos ainda possuem uma complexidade maior para esses casos de lista ordenada. Ainda assim, o `Insertion Sort` compartilha dessa vantagem.
