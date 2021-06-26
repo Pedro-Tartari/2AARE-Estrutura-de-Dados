@@ -5,7 +5,7 @@
 O `Insertion Sort` é um algoritmo lento porém com muitas vantagens sobre seus semelhantes como `Selection Sort`  e `Bubble Sort`. Na verdade, só é lento de fato em listas
 grandes e desordenadas, perdendo para `Quick Sort` ou `Heap Sort`.
 
-Apesar disso, suas vantagens como implementação fácil, eficiência em listas pequenas, até mais que outros algoritmos quadráticos `(O(n^2))`, adaptativo, estável, e sua capacidade
+Apesar disso, suas vantagens são implementação fácil, eficiência em listas pequenas, até mais que outros algoritmos quadráticos `(O(n^2))`, adaptativo, estável, e sua capacidade
 de ordenar uma lista conforme a vai recebendo.
 
 
